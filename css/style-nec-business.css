@@ -1,0 +1,144 @@
+/***************************************************************** START TITLE *****************************************************************/
+
+.title-page {
+    width: 100%;
+    margin: 0 auto;
+    height: 300px;
+    padding-top: 190px;
+    background: #274f9f;
+    text-align: left;
+    border-bottom: 1px solid #274f9f;
+}
+
+.title-page-grid {
+    display: grid;
+    grid-template-columns: 500px;
+    grid-template-rows: repeat(2, max-content);
+    height: auto;
+}
+
+.title-page-heading {
+    margin-left: 15px;
+    border-left: 5px solid;
+    border-image: linear-gradient(to bottom, whitesmoke, rgba(0, 0, 0, 0)) 1 100%;
+}
+
+.title-page-heading p {
+    padding-left: 15px;
+    color: whitesmoke;
+    font-size: 20px;
+}
+
+.title-page-heading h1 {
+    padding-left: 15px;
+    color: whitesmoke;
+    font-size: 40px;
+    font-weight: 30;
+}
+
+.title-page span {
+    padding-left: 15px;
+    padding-top: 10px;
+    color: black;
+    font-size: 20px;
+}
+
+/***************************************************************** START CONTENT DESCRIPTION *****************************************************************/
+
+.content-business-description{
+    padding: 40px 0px;
+    border-bottom: 1px solid rgb(170, 170, 170, 0.4);
+}
+.content-business-description-title{
+    border-left: 5px solid;
+    border-image: linear-gradient(to bottom, #274f9f, rgba(0, 0, 0, 0)) 1 100%;
+    margin-left: 15px;
+}
+
+.content-business-description-title h1{
+    padding-left: 15px;
+    color: #274f9f;
+    font-size: 30px;
+    font-weight: 10;
+    text-transform: uppercase;
+}
+
+.content-business-description p{
+    padding-top: 20px;
+    margin: 0px 40px;
+    color: #858585;
+    font-size: 20px;
+    text-align: justify;
+}
+
+/***************************************************************** START CONTENT SERVICE *****************************************************************/
+
+.content-business-service{
+    padding: 40px 0px;
+}
+
+.content-business-service-title{
+    border-left: 5px solid;
+    border-image: linear-gradient(to bottom, #274f9f, rgba(0, 0, 0, 0)) 1 100%;
+    margin-left: 15px;
+}
+
+.content-business-service-title h2{
+    padding: 0 15px;
+    color: #274f9f;
+    font-size: 30px;
+    font-weight: 10;
+    text-transform: uppercase;
+}
+
+.content-business-service-grid{
+    margin-left: 20px;
+    padding-top: 30px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(13, max-content);
+    grid-gap: 2rem;
+}
+
+.content-business-symbol-grid{
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    grid-gap: 2rem;
+}
+
+.content-business-service img{
+    max-height: max-content;
+    max-width: max-content;
+    height: 70px;
+    width: auto;
+    margin: auto auto;
+}
+
+.content-business-service p{
+    max-height: max-content;
+    height: max-content;
+    margin: auto 0;
+    padding-right: 80px;
+    color: #858585;
+    font-size: 20px;
+    text-align: justify;
+}
+
+/***************************************************************** START RESPONSIVE *****************************************************************/
+
+@media screen and (max-width: 1240px) {
+
+    .content-business-description p{
+        margin: 0px 15px;
+        text-align: center;
+    }
+
+    .content-business-service-grid{
+        margin-left: 0;
+    }
+
+    .content-business-service p{
+        padding-right: 20px;
+        text-align: center;
+    }
+}

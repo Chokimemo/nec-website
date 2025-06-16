@@ -1,0 +1,183 @@
+/***************************************************************** START TITLE *****************************************************************/
+
+.title-page {
+    margin: 0 auto;
+    height: 300px;
+    padding-top: 190px;
+    background: #274f9f;
+    text-align: left;
+    border-bottom: 1px solid #274f9f;
+}
+
+.title-page-grid {
+    display: grid;
+    grid-template-columns: 500px;
+    grid-template-rows: repeat(2, max-content);
+    height: auto;
+}
+
+.title-page-heading {
+    margin-left: 15px;
+    border-left: 5px solid;
+    border-image: linear-gradient(to bottom, whitesmoke, rgba(0, 0, 0, 0)) 1 100%;
+}
+
+.title-page-heading p {
+    padding-left: 15px;
+    color: whitesmoke;
+    font-size: 20px;
+}
+
+.title-page-heading h1 {
+    padding-left: 15px;
+    color: whitesmoke;
+    font-size: 40px;
+    font-weight: 30;
+}
+
+.title-page span {
+    padding-left: 15px;
+    padding-top: 10px;
+    color: black;
+    font-size: 20px;
+}
+
+/***************************************************************** START CONTACT *****************************************************************/
+
+.content-contact{
+    padding: 40px 0;
+}
+
+.content-contact-title{
+    border-left: 5px solid;
+    border-image: linear-gradient(to bottom, #274f9f, rgba(0, 0, 0, 0)) 1 100%;
+    margin-left: 15px;
+}
+
+.content-contact-title h1{
+    padding-left: 15px;
+    color: #274f9f;
+    font-size: 30px;
+    font-weight: 10;
+    text-transform: uppercase;
+}
+
+.content-contact-grid{
+    display: grid;
+    grid-template-columns: 1fr .6fr;
+    grid-gap: 2rem ;
+    margin-top: 40px;
+}
+
+/***************************************************************** START INFORMATION *****************************************************************/
+
+.content-contact-information-grid{
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    grid-template-rows: repeat(4, max-content);
+    grid-gap: 2rem;
+}
+
+.content-contact-information img{
+    height: 100px;
+    width: auto;
+}
+
+.content-contact-information p{
+    max-height: max-content;
+    height: max-content;
+    margin: auto 0;
+    font-size: 20px;
+    color: #858585;
+}
+
+/***************************************************************** START SENDMAIL *****************************************************************/
+
+.container-sendmail{
+    max-width: max-content;
+    width: max-content;
+    margin: 0 auto;
+}
+
+.content-contact-sendmail{
+    background: #274f9f;
+    border-radius: 20px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    max-width: max-content;
+    padding: 0 10px;
+}
+
+form h2{
+    color: whitesmoke;
+    max-width: max-content;
+    width: max-content;
+    margin: 20px auto;
+    font-size: 30px;
+}
+
+form p{
+    color: whitesmoke;
+    font-size: 20px;
+}
+
+form input,textarea{
+    max-width: 300px;
+    min-width: 300px;
+    width: 300px;
+    height: 25px;
+    border: 0;
+    border-radius: 5px;
+    background: #f5f5f5;
+    padding: 5px;
+    outline: none;
+    margin: 10px 0;
+}
+
+form textarea{
+    max-height: 100px;
+    min-height: 100px;
+    height: 100px;
+}
+
+form button{
+    padding: 10px;
+    background: #ff5361;
+    color: whitesmoke;
+    font-size: 18px;
+    border: 0;
+    border-radius: 20px;
+    outline: none;
+    cursor: pointer;
+    margin: 20px 0;
+}
+
+/***************************************************************** START RESPONSIVE *****************************************************************/
+
+@media screen and (max-width: 1240px) {
+    
+    .content-contact-grid{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, max-content);
+    }
+
+    .content-contact-information img{
+        height: 50px;
+    }
+    
+    .content-contact-information-grid{
+        margin: 0 10px;
+    }
+
+    .content-contact-information p{
+        font-size: 15px;
+    }
+
+    .content-contact-sendmail{
+        margin: 0 10px;
+    }
+    
+}

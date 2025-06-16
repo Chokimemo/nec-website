@@ -1,0 +1,304 @@
+/***************************************************************** START TITLE *****************************************************************/
+
+.title-page {
+    margin: 0 auto;
+    height: 300px;
+    padding-top: 190px;
+    background: #274f9f;
+    text-align: left;
+    border-bottom: 1px solid #274f9f;
+}
+
+.title-page-grid {
+    display: grid;
+    grid-template-columns: 500px;
+    grid-template-rows: repeat(2, max-content);
+    height: auto;
+}
+
+.title-page-heading {
+    margin-left: 15px;
+    border-left: 5px solid;
+    border-image: linear-gradient(to bottom, whitesmoke, rgba(0, 0, 0, 0)) 1 100%;
+}
+
+.title-page-heading p {
+    padding-left: 15px;
+    color: whitesmoke;
+    font-size: 20px;
+}
+
+.title-page-heading h1 {
+    padding-left: 15px;
+    color: whitesmoke;
+    font-size: 40px;
+    font-weight: 30;
+}
+
+.title-page span {
+    padding-left: 15px;
+    padding-top: 10px;
+    color: black;
+    font-size: 20px;
+}
+
+/***************************************************************** START CONTENT proref DETAIL *****************************************************************/
+
+.content-proref{
+    background: #274f9f;
+}
+
+.prorefSlides{
+    max-width: 850px;
+    width: 850px;
+    margin: 0 auto;
+    overflow: hidden;
+    height: 0px;
+    transition: height 0.5s linear;
+}
+
+.prorefSlides.first{
+    height: auto;
+}
+
+.prorefSlides.active{
+    height: auto;
+    transition-delay: 0.55s;
+}
+
+.slides-frame-out{
+    background: white;
+    border-radius: 20px;
+    border: 10px solid #274f9f;
+}
+
+.slides-frame-in{
+    margin: 20px;
+}
+
+.proref-header-grid{
+    display: grid;
+    grid-template-columns: 1fr max-content;
+    grid-gap: 2rem;
+}
+
+.prorefSlides h1{
+    font-size: 20px;
+    color: #274f9f;
+    text-transform: uppercase;
+    text-align: left;
+}
+
+.close-proref{
+    display: block;
+    height: 25px;
+    width: 25px;
+    background: #274f9f;
+    border-radius: 30%;
+}
+
+.close-proref:hover{
+    cursor: pointer;
+    scale: 110%;
+}
+
+.close-proref i{
+    display: block;
+    height: 3px;
+    width: 15px;
+    border-radius: 1.5px;
+    margin: 11px auto;
+    background: whitesmoke;
+}
+
+.proref-img-container{
+    max-width: 600px;
+    width: 600px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.prev, .next{
+    cursor: pointer;
+    position: absolute;
+    color: white;
+    background: rgba(0,0,0,0.4);
+    top: 41.5%;
+    width: auto;
+    padding: 20px;
+    font-weight: bold;
+    font-size: 25px;
+    transition: 0.8s ease;
+    border-radius: 0 8px 8px 0;
+    user-select: none;
+}
+
+.next{
+    right: 0;
+    border-radius: 8px 0 0 8px;
+}
+
+.prev:hover, .next:hover{
+    background: rgba(0,0,0);
+}
+
+.proref-img{
+    max-width: max-content;
+    max-height: max-content;
+    margin: 20px auto;
+    animation: fade 1.2s;
+}
+
+.proref-img img{
+    width: 600px;
+    height: auto;
+    border-radius: 20px;
+}
+
+.header-detail{
+    max-width: 650px;
+    margin: 20px auto 10px;
+}
+
+.header-detail h2{
+    padding: 10px;
+    background: #274f9f;
+    color: whitesmoke;
+    border-radius: 5px;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.detail{
+    display: grid;
+    grid-template-columns: .5fr 1fr;
+    max-width: 650px;
+    margin: 5px auto;
+}
+
+.detail h2{
+    color: #1b3874;
+    font-size: 20px;
+}
+
+.detail p{
+    color: #858585;
+    font-size: 20px;
+}
+
+.prorefSlides p.proref-description{
+    color: #858585;
+    font-size: 20px;
+    text-indent: 100px;
+    text-align: justify;
+}
+
+@keyframes fade {
+    from {opacity: 0.4} 
+    to {opacity: 1}
+}
+
+/***************************************************************** START CONTENT PROREF LIST *****************************************************************/
+
+.content-proref-list{
+    background: #274f9f;
+}
+
+.swiper{
+    width: 100%;
+    height: 500px;
+    background: white;
+    border: 10px solid #274f9f;
+    border-radius: 20px;
+    cursor: grab;
+}
+
+.swiper-slide{
+    padding: 0 10px;
+}
+
+.proref-head-grid{
+    display: grid;
+    grid-template-columns: max-content .97fr;
+    height: max-content;
+    grid-gap: 2rem;
+    padding: 10px 0;
+}
+
+.proref-head-grid img{
+    width: 150px;
+    height: 100px;
+    border-radius: 5px;
+}
+
+.proref-head-grid h1{
+    color: #858585;
+}
+
+.proref-head-grid a{
+    cursor: pointer;
+}
+
+.proref-head-grid a:hover{
+    color: #274f9f;
+}
+
+.status{
+    width: max-content;
+    background: green;
+    border-radius: 5px;
+}
+
+.status p{
+    color: whitesmoke;
+    margin: 5px;
+}
+
+/***************************************************************** START RESPONSIVE *****************************************************************/
+
+@media screen and (max-width: 1240px) {
+
+    .prorefSlides{
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .proref-img-container{
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .proref-img img{
+        width: 100%;
+    }
+
+    .prev, .next{
+        padding: 10px;
+        font-size: 15px;
+    }
+
+    .detail{
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    .detail h2{
+        font-size: 15px;
+    }
+    
+    .detail p{
+        font-size: 15px;
+    }
+
+    .proref-head-grid{
+        grid-template-columns: max-content 1fr;
+        grid-gap: 1rem;
+    }
+
+    .proref-head-grid h1{
+        font-size: 15px;
+    }
+
+    .proref-head-grid p{
+        font-size: 12px;
+    }
+}
