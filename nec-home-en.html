@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>NEW ELECTRIC</title>
+    <link rel="icon" href="img/icon_NEC.png">
+    <link rel="stylesheet" href="css/style-nec-header&footer-home.css">
+    <link rel="stylesheet" href="css/style-nec-home.css">
+
+    <script>
+
+        function active_menu_side() {
+            var x = document.getElementById("menu-side-active");
+            var y = document.getElementById("symbol-menu");
+            if (x.className === "menu-side") {
+                x.className += " active";
+                y.className += " active";
+            } else {
+                x.className = "menu-side";
+                y.className = "toggle-menu";
+            }
+        }
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 0 && document.getElementById("main-header").className === "header") {
+                document.getElementById("main-header").className += " active";
+            } else if (window.scrollY === 0) {
+                document.getElementById("main-header").className = "header";
+            }
+        })
+
+    </script>
+
+</head>
+
+<body>
+
+    <aside class="menu-side" id="menu-side-active">
+        <ul class="menu-side-bar">
+            <a href="nec-home-en.html" class="page-active">
+                <li>Home</li>
+            </a>
+            <a href="nec-about-en.html">
+                <li>About NEC</li>
+            </a>
+            <a href="nec-business-en.html">
+                <li>Business</li>
+            </a>
+            <a href="nec-news-en.html">
+                <li>News</li>
+            </a>
+            <a href="nec-proref-en.html">
+                <li>Project reference</li>
+            </a>
+            <a href="nec-contact-en.html">
+                <li>Contact</li>
+            </a>
+        </ul>
+    </aside>
+
+    <header>
+        <nav>
+            <div class="header" id="main-header">
+                <div class="container">
+                    <div class="header-grid">
+                        <div class="logo">
+                            <a href="nec-home-en.html"><img src="img/Logo_NEC.png" alt=""></a>
+                        </div>
+                        <ul class="menu">
+                            <li><a href="nec-home-en.html" class="page-active">Home</a></li>
+                            <li><a href="nec-about-en.html">About NEC</a></li>
+                            <li><a href="nec-business-en.html">Business</a></li>
+                            <li><a href="nec-news-en.html">News</a></li>
+                            <li><a href="nec-proref-en.html">Project reference</a></li>
+                            <li><a href="nec-contact-en.html">Contact</a></li>
+                        </ul>
+                        <div class="action">
+                            <div class="action-grid">
+                                <div class="lang">
+                                    <a href="nec-home-en.html"><img src="img/flag-en.png" alt=""></a>
+                                    <a href="nec-home-th.html"><img src="img/flag-th.png" alt=""></a>
+                                </div>
+                                <div class="toggle-menu" id="symbol-menu">
+                                    <a href="javascript:void(0);" class="icon" onclick="active_menu_side()"><i
+                                            class="toggle-one"></i><i class="toggle-two"></i><i
+                                            class="toggle-three"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end header-grid -->
+                </div>
+                <!-- end container -->
+            </div>
+            <!-- end header -->
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- start title-page -->
+        <div class="title-page">
+            <div class="container">
+                <div class="title-page-grid">
+                    <div class="title-page-heading">
+                        <p><b>Welcome to</b></p>
+                        <h1>NEW ELECTRIC</h1>
+                    </div>
+                    <span>NEC is a leading in construction management for the construction of high voltage
+                        substations, high voltage transmission lines, hydroelectric power plants. </span>
+                </div>
+            </div>
+        </div>
+        <!-- end title-page -->
+
+        <section class="content">
+
+            <div class="container">
+
+                <!-- start content-history -->
+                <div class="content-history">
+                    <div class="content-history-grid">
+                        <img src="img/home-about-us.png" alt="">
+                        <div class="content-history-message">
+                            <div class="content-history-message-title">
+                                <p><b>NEW ELECTRIC</b></p>
+                                <h2>About us</h2>
+                            </div>
+                            <div class="content-history-description">
+                                <p>New Electric Company Limited. was established in 2005 with registered capital of
+                                    1,000,000
+                                    baht. by Mr. Supakit Jetiyawan for marketing
+                                    engineering.
+                                    After that 1 year, New Electric changed its marketing business. Come to be the
+                                    management
+                                    of various construction projects. Both Thai and International until now.</p>
+                                <p>
+                                    Currently, New Electric Company Limited has a management team in various fields with
+                                    expertise. And
+                                    more than 20 years of experience, ready to provide services in project management or
+                                    consulting and feasibility analysis.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end content-history -->
+
+                <!-- start content-project-update -->
+                <div class="content-project-update">
+                    <div class="proupSlides active">
+                        <div class="content-project-update-grid">
+                            <div class="content-project-update-detail">
+
+                                <div class="content-project-update-detail-title">
+                                    <p><b>NEW ELECTRIC</b></p>
+                                    <h3>Project update</h3>
+                                </div>
+
+                                <div class="content-project-update-description">
+                                    <div class="content-project-update-description-name">
+                                        <p><b>115/22kV SUBSTATION UDON THANI 5 - GIS INDOOR TYPE</b></p>
+                                    </div>
+                                    <div class="content-project-update-description-plan">
+                                        <p>Construction of Udon Thani Sub Station 5 under the Transmission and
+                                            Distribution
+                                            System Development Project, phase 2, plan 1,
+                                            According to the announcement of the Provincial Electricity Authority</p>
+                                    </div>
+                                </div>
+
+                                <div class="content-project-update-timeline">
+                                    <div class="content-project-update-timeline-grid">
+                                        <!-- change classname (active) when the site reaches that process (inactive) process in future -->
+                                        <div class="dot-active" data-info-1="recive area"><span></span></div>
+                                        <div class="tl-active"></div>
+                                        <div class="tl-active"></div>
+                                        <div class="dot-active" data-info-2="civil work"><span></span></div>
+                                        <div class="tl-active"></div>
+                                        <div class="tl-active"></div>
+                                        <div class="dot-active" data-info-3="electrical work"><span></span></div>
+                                        <div class="tl-active"></div>
+                                        <div class="tl-active"></div>
+                                        <div class="dot-active" data-info-4="test & commissioning"><span></span></div>
+                                        <div class="tl-active"></div>
+                                        <div class="tl-active"></div>
+                                        <div class="dot-active" data-info-5="AC withstand"><span></span></div>
+                                    </div>
+                                </div>
+
+                                <div class="content-project-update-cr">
+                                    <p><a href="nec-proref-en.html">view more project >></a></p>
+                                </div>
+
+                            </div>
+
+                            <div class="proup-img-container">
+                                <div class="proup-img ude" style="display: block;">
+                                    <img src="img/proup-ude-1.png" alt="">
+                                </div>
+                                <div class="proup-img ude" style="display: none;">
+                                    <img src="img/proup-ude-2.png" alt="">
+                                </div>
+                                <div class="proup-img ude" style="display: none;">
+                                    <img src="img/proup-ude-3.png" alt="">
+                                </div>
+                                <div class="proup-img ude" style="display: none;">
+                                    <img src="img/proup-ude-4.png" alt="">
+                                </div>
+                                <a class="prev" onclick="plusImg(-1, 'ude')">❮</a>
+                                <a class="next" onclick="plusImg(1, 'ude')">❯</a>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- <div class="proupSlides">
+                        <div class="content-project-update-grid">
+                            <div class="content-project-update-detail">
+
+                                <div class="content-project-update-detail-title">
+                                    <p><b>NEW ELECTRIC</b></p>
+                                    <h3>Project update</h3>
+                                </div>
+
+
+                            </div>
+
+                            <div class="proup-img">
+                                <img src="img/proup-ude-1.png" alt="">
+                            </div>
+
+                        </div>
+                    </div> -->
+
+                    <div class="select-proup">
+                        <div class="select-proup-grid">
+                            <div class="dot-proup active"><span onclick="currentProup(1, 'ude')"></span></div>
+                            <!-- <div class="dot-proup"><span onclick="currentProup(2)"></span></div> -->
+                        </div>
+                    </div>
+
+                    <script>
+                        let imgIndex;
+                        let first = "true";
+                        let setImgfirst = "true";
+                        let currentIndexfirst = 0;
+
+                        function setImg(codename) {
+                            if (setImgfirst == "true") {
+                                setImgfirst = "false";
+                                imgIndex = 1;
+                                showImg(imgIndex += currentIndexfirst, codename);
+                            } else if (setImgfirst == "false") {
+                                imgIndex = 1;
+                                showImg(imgIndex, codename);
+                            }
+                        }
+
+                        function plusImg(currentIndex, codename) {
+                            if (first == "true") {
+                                currentIndexfirst = currentIndex;
+                                currentProup(1, codename);
+                            } else if (first == "false") {
+                                showImg(imgIndex += currentIndex, codename);
+                            }
+                        }
+
+                        function showImg(currentIndex, codename) {
+                            let currentImg;
+                            let img = document.getElementsByClassName(codename);
+                            if (currentIndex > img.length) { imgIndex = 1 }
+                            if (currentIndex < 1) { imgIndex = img.length }
+                            for (currentImg = 0; currentImg < img.length; currentImg++) {
+                                img[currentImg].style.display = "none";
+                            }
+                            img[imgIndex - 1].style.display = "block";
+                        }
+
+                        function currentProup(proupIndex, codename) {
+                            let slides;
+                            var dot = document.getElementsByClassName("dot-proup");
+                            var proup = document.getElementsByClassName("proupSlides");
+                            for (slides = 0; slides < proup.length; slides++) {
+                                proup[slides].className = proup[slides].className.replace(" active", "");
+                                dot[slides].className = dot[slides].className.replace(" active", "");
+                            }
+                            first = "false";
+                            proup[proupIndex - 1].className += " active";
+                            dot[proupIndex - 1].className += " active";
+                            setImg(codename);
+                        }
+                    </script>
+
+                </div>
+                <!-- end content-project-update -->
+
+                <!-- start content-news -->
+                <div class="content-news">
+                    <div class="content-news-title">
+                        <p><b>NEW ELECTRIC</b></p>
+                        <h4>NEWS</h4>
+                    </div>
+                    <div class="content-news-grid">
+
+                        <div class="content-news-first">
+                            <img src="img/news-ude-worship.png" alt="">
+                            <div class="content-news-first-detail">
+                                <p><b>Worship the sacred for the construction of Substation Udon5 project</b></p>
+                            </div>
+                            <div class="content-news-first-cr">
+                                <small>07/09/2022</small>
+                                <p><a href="nec-news-en.html">read more >></a></p>
+                            </div>
+                        </div>
+                        <!-- first -->
+
+                        <div class="content-news-second">
+                            <img src="img/news-ude.png" alt="">
+                            <div class="content-news-second-detail">
+                                <p><b>The signing ceremony of the contract for the construction of Substation Udon5
+                                        project</b></p>
+                            </div>
+                            <div class="content-news-second-cr">
+                                <small>26/07/2022</small>
+                                <p><a href="nec-news-en.html">read more >></a></p>
+                            </div>
+                        </div>
+                        <!-- second -->
+
+                        <div class="content-news-third">
+                            <img src="img/news-xia.png" alt="">
+                            <div class="content-news-third-detail">
+                                <p><b>Final Delivery for PEA 115/22kV Sophisai Substation</b></p>
+                            </div>
+                            <div class="content-news-third-cr">
+                                <small>19/05/2022</small>
+                                <p><a href="nec-news-en.html">read more >></a></p>
+                            </div>
+                        </div>
+                        <!-- third -->
+
+                        <!-- <div class="content-news-first">
+                            <img src="img/300x200.png" alt="">
+                            <div class="content-news-first-detail">
+                                <p><b>Headlines</b></p>
+                            </div>
+                            <div class="content-news-first-cr">
+                                <small>date</small>
+                                <a href=""><p><u>read more >></u></p></a>
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+                <!-- end content-news -->
+
+            </div>
+            <!-- end container for content -->
+
+            <!-- start content-partner -->
+            <div class="content-partner">
+                <div class="container">
+                    <div class="content-partner-grid">
+                        <img src="img/Logo_36.png" alt="">
+                        <img src="img/Logo_CNR.png" alt="">
+                        <img src="img/Logo_IEC.png" alt="">
+                        <img src="img/Logo_TADS.png" alt="">
+                        <img src="img/Logo_PE&C.png" alt="">
+                        <img src="" alt="">
+                    </div>
+                </div>
+            </div>
+            <!-- end content-partner -->
+
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="contact-us">
+                    <h6>NEW Electric Company Limited</h6>
+                    <p> 22 Krungthep-Non 8,
+                        Bang Khen, Muang Nonthaburi, Nonthaburi,
+                        Thailand 11000 <br></p>
+                    <span> Tel : 02 965 0072-3 <br>
+                        Fax : 02 965 0076 <br>
+                        E-mail : nec.999engineer@gmail.com </span>
+                </div>
+                <div class="social"></div>
+                <div class="message"></div>
+            </div>
+            <!-- end footer-grid -->
+        </div>
+        <!-- end container -->
+    </footer>
+
+    <div class="copyright">
+        <div class="container">
+            <div class="credit">
+                <p>Copyright © 2022 NEW Electric Company Limited</p>
+            </div>
+        </div>
+    </div>
+    <!-- end copyright -->
+
+</body>
+
+</html>

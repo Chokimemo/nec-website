@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>NEW ELECTRIC</title>
+    <link rel="icon" href="img/icon_NEC.png">
+    <link rel="stylesheet" href="css/style-nec-header&footer.css">
+    <link rel="stylesheet" href="css/style-nec-about.css">
+
+    <script>
+
+        function active_menu_side() {
+            var x = document.getElementById("menu-side-active");
+            var y = document.getElementById("symbol-menu");
+            if (x.className === "menu-side") {
+                x.className += " active";
+                y.className += " active";
+            } else {
+                x.className = "menu-side";
+                y.className = "toggle-menu";
+            }
+        }
+
+        window.addEventListener('scroll', () => {
+            console.log(scrollY);
+            if (window.scrollY > 0 && document.getElementById("main-header").className === "header") {
+                document.getElementById("main-header").className += " active";
+            } else if (window.scrollY === 0) {
+                document.getElementById("main-header").className = "header";
+            }
+        })
+
+    </script>
+
+</head>
+
+<body>
+
+    <aside class="menu-side" id="menu-side-active">
+        <ul class="menu-side-bar">
+            <a href="nec-home-en.html">
+                <li>Home</li>
+            </a>
+            <a href="nec-about-en.html" class="page-active">
+                <li>About NEC</li>
+            </a>
+            <a href="nec-business-en.html">
+                <li>Business</li>
+            </a>
+            <a href="nec-news-en.html">
+                <li>News</li>
+            </a>
+            <a href="nec-proref-en.html">
+                <li>Project reference</li>
+            </a>
+            <a href="nec-contact-en.html">
+                <li>Contact</li>
+            </a>
+        </ul>
+    </aside>
+
+    <header>
+        <nav>
+            <div class="header" id="main-header">
+                <div class="container">
+                    <div class="header-grid">
+                        <div class="logo">
+                            <a href="nec-home-en.html"><img src="img/Logo_NEC(W).png" alt=""></a>
+                        </div>
+                        <ul class="menu">
+                            <li><a href="nec-home-en.html">Home</a></li>
+                            <li><a href="nec-about-en.html" class="page-active">About NEC</a></li>
+                            <li><a href="nec-business-en.html">Business</a></li>
+                            <li><a href="nec-news-en.html">News</a></li>
+                            <li><a href="nec-proref-en.html">Project reference</a></li>
+                            <li><a href="nec-contact-en.html">Contact</a></li>
+                        </ul>
+                        <div class="action">
+                            <div class="action-grid">
+                                <div class="lang">
+                                    <a href="nec-home-en.html"><img src="img/flag-en.png" alt=""></a>
+                                    <a href="nec-home-th.html"><img src="img/flag-th.png" alt=""></a>
+                                </div>
+                                <div class="toggle-menu" id="symbol-menu">
+                                    <a href="javascript:void(0);" class="icon" onclick="active_menu_side()"><i
+                                            class="toggle-one"></i><i class="toggle-two"></i><i
+                                            class="toggle-three"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end header-grid -->
+                </div>
+                <!-- end container -->
+            </div>
+            <!-- end header -->
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- start title-page -->
+        <div class="title-page">
+            <div class="container">
+                <div class="title-page-heading">
+                    <p><b>New electric</b></p>
+                    <h1>ABOUT NEC</h1>
+                </div>
+            </div>
+        </div>
+        <!-- end title-page -->
+
+        <section class="content">
+            <div class="container">
+
+                <div class="content-full-history">
+                    <div class="content-full-history-title">
+                        <h2>History</h2>
+                    </div>
+                    <div class="content-full-history-description">
+                        <p>At first, NEC was established in 2005 by Mr. Supakit Jetiyawan to conduct marketing
+                            transactions with partners and customers
+                            for flexibility in management. <br></p>
+                        <p>When it opened a while ago. Group of customers investing and accepting foreign work. Lack of
+                            a project management team in terms of turnkey and EPCF construction work, there is a need
+                            for a professional management team. At that time company had a team of experienced
+                            management in various fields, such as industrial plant specialists, and the construction of
+                            power plants with stations and transmission lines in Thailand and abroad. include the Middle
+                            East, such as the petroleum and petrochemical Industries. <br></p>
+                        <p>To support customers to need more investment in Thailand and surrounding countries such as
+                            Laos, Cambodia, and Myanmar. NEC adjusts the work plan by focusing on the consultant,
+                            project management, and construction management in each project to achieve the goals of the
+                            project owners, both public and private sectors including a comprehensive feasibility study.
+                            <br>
+                        </p>
+                    </div>
+                </div>
+                <!-- end history -->
+
+                <div class="content-nec-executives">
+                    <div class="content-nec-executives-title">
+                        <h3>Executives</h3>
+                    </div>
+                    <div class="content-nec-executives-grid">
+                        <div class="exe apipol">
+                            <div class="executives-member-grid">
+                                <img src="img/executives-apipol.png" alt="">
+                                <div class="executives-detail">
+                                    <p class="name"><b>Apipol Chananugool</b></p>
+                                    <p class="position">Chairman of the Executive Director</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="exe supakit">
+                            <div class="executives-member-grid">
+                                <img src="img/executives-supakit.png" alt="">
+                                <div class="executives-detail">
+                                    <p class="name"><b>Supakit Jetiyawan</b></p>
+                                    <p class="position">Director / Executive Director / Business Development</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="exe khemkang">
+                            <div class="executives-member-grid">
+                                <img src="img/executives-khemkang.png" alt="">
+                                <div class="executives-detail">
+                                    <p class="name"><b>Khemkang Sirirachatapong</b></p>
+                                    <p class="position">Executive Director / Accounting & Finance</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="exe nuttakit">
+                            <div class="executives-member-grid">
+                                <img src="img/executives-nuttakit.png" alt="">
+                                <div class="executives-detail">
+                                    <p class="name"><b>Nuttakit Jitpanusophon</b></p>
+                                    <p class="position">Executive Director / Procurement</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div class="exe patthanachart">
+                            <div class="executives-member-grid">
+                                <img src="img/executives-patthanachart.png" alt="">
+                                <div class="executives-detail">
+                                    <p class="name"><b>Patthanachat Rodkong</b></p>
+                                    <p class="position">Executive Director / Engineer</p>
+                                </div>
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+                <!-- end executives -->
+
+                <div class="content-timeline">
+                    <div class="content-timeline-title">
+                        <h4>Timeline</h4>
+                    </div>
+
+                    <div class="swiper timeline">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="swiper-slide-grid">
+                                    <div class="timeline-grid">
+                                        <div class="tl"></div>
+                                        <div class="dot"><span></span></div>
+                                        <div class="tl"></div>
+                                    </div>
+                                    <div class="description">
+                                        <h1>2005</h1>
+                                        <p>Marketing & Trading consultance
+                                            Project & Construction management</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="swiper-slide-grid">
+                                    <div class="timeline-grid">
+                                        <div class="tl"></div>
+                                        <div class="dot"><span></span></div>
+                                        <div class="tl"></div>
+                                    </div>
+                                    <div class="description">
+                                        <h1>2006</h1>
+                                        <p>Project management - TPI.
+                                            for Tokyo Denki and 36 (Ending in 2018)</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="swiper-slide-grid">
+                                    <div class="timeline-grid">
+                                        <div class="tl"></div>
+                                        <div class="dot"><span></span></div>
+                                        <div class="tl"></div>
+                                    </div>
+                                    <div class="description">
+                                        <h1>2007</h1>
+                                        <p>Project & Construction management
+                                            for Tokyo Denki (Ending in 2018)</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="swiper-slide-grid">
+                                    <div class="timeline-grid">
+                                        <div class="tl"></div>
+                                        <div class="dot"><span></span></div>
+                                        <div class="tl"></div>
+                                    </div>
+                                    <div class="description">
+                                        <h1>2014</h1>
+                                        <p>Controll & Communication engineering
+                                            M&E Installation</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="swiper-slide-grid">
+                                    <div class="timeline-grid">
+                                        <div class="tl"></div>
+                                        <div class="dot"><span></span></div>
+                                        <div class="tl"></div>
+                                    </div>
+                                    <div class="description">
+                                        <h1>2015</h1>
+                                        <p>Fesibility study Transmission line & Substation <br>
+                                            Backbone - Lao Nation Grid (Ending in 2018)</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="swiper-slide-grid">
+                                    <div class="timeline-grid">
+                                        <div class="tl"></div>
+                                        <div class="dot"><span></span></div>
+                                        <div class="tl"></div>
+                                    </div>
+                                    <div class="description">
+                                        <h1>2018</h1>
+                                        <p>Project & Construction management
+                                            Transmission line & Substation of PEA & University</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-scrollbar"></div>
+                    </div>
+
+                    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+                    <script src="js/swiper-bundle.min.js"></script>
+                    <script>
+                        var swiper = new Swiper(".timeline", {
+                            slidesPerView: 3,
+                            freeMode: true,
+                            scrollbar: {
+                                el: ".swiper-scrollbar",
+                            },
+                        });
+                    </script>
+
+                  </div>
+                <!-- end timeline -->
+
+            </div>
+            <!-- end container -->
+
+            <div class="content-profile">
+                <div class="container">
+                    <div class="content-profile-grid">
+                        <div class="content-profile-title">
+                            <h4>Company profile</h4>
+                        </div>
+                        <div class="content-profile-cover">
+                            <a href="https://drive.google.com/file/d/1ArNCTQFExOk-fF5eL5P76LM5BC0879jI/view?usp=sharing"><img src="img/profile-cover-1.png" alt=""></a>
+                        </div>  
+                    </div>
+                </div>
+            </div>
+            <!-- end profile -->
+
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="contact-us">
+                    <h6>NEW Electric Company Limited</h6>
+                    <p> 22 Krungthep-Non 8,
+                        Bang Khen, Muang Nonthaburi, Nonthaburi,
+                        Thailand 11000 <br></p>
+                    <span> Tel : 02 965 0072-3 <br>
+                        Fax : 02 965 0076 <br>
+                        E-mail : nec.999engineer@gmail.com </span>
+                </div>
+                <div class="social"></div>
+                <div class="message"></div>
+            </div>
+            <!-- end footer-grid -->
+        </div>
+        <!-- end container -->
+    </footer>
+
+    <div class="copyright">
+        <div class="container">
+            <div class="credit">
+                <p>Copyright © 2022 NEW Electric Company Limited</p>
+            </div>
+        </div>
+    </div>
+    <!-- end copyright -->
+
+</body>
+
+</html>

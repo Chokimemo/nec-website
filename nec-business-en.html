@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>NEW ELECTRIC</title>
+    <link rel="icon" href="img/icon_NEC.png">
+    <link rel="stylesheet" href="css/style-nec-header&footer.css">
+    <link rel="stylesheet" href="css/style-nec-business.css">
+
+    <script>
+
+        function active_menu_side() {
+            var x = document.getElementById("menu-side-active");
+            var y = document.getElementById("symbol-menu");
+            if (x.className === "menu-side") {
+                x.className += " active";
+                y.className += " active";
+            } else {
+                x.className = "menu-side";
+                y.className = "toggle-menu";
+            }
+        }
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 0 && document.getElementById("main-header").className === "header") {
+                document.getElementById("main-header").className += " active";
+            } else if (window.scrollY === 0) {
+                document.getElementById("main-header").className = "header";
+            }
+        })
+
+    </script>
+
+</head>
+
+<body>
+
+    <aside class="menu-side" id="menu-side-active">
+        <ul class="menu-side-bar">
+            <a href="nec-home-en.html"><li>Home</li></a>
+            <a href="nec-about-en.html"><li>About NEC</li></a>
+            <a href="nec-business-en.html" class="page-active"><li>Business</li></a>
+            <a href="nec-news-en.html"><li>News</li></a>
+            <a href="nec-proref-en.html"><li>Project reference</li></a>
+            <a href="nec-contact-en.html"><li>Contact</li></a>
+        </ul>
+    </aside>
+
+    <header>
+        <nav>
+            <div class="header" id="main-header">
+                <div class="container">
+                    <div class="header-grid">
+                        <div class="logo">
+                            <a href="nec-home-en.html"><img src="img/Logo_NEC(W).png" alt=""></a>
+                        </div>
+                        <ul class="menu">
+                            <li><a href="nec-home-en.html">Home</a></li>
+                            <li><a href="nec-about-en.html">About NEC</a></li>
+                            <li><a href="nec-business-en.html" class="page-active">Business</a></li>
+                            <li><a href="nec-news-en.html">News</a></li>
+                            <li><a href="nec-proref-en.html">Project reference</a></li>
+                            <li><a href="nec-contact-en.html">Contact</a></li>
+                        </ul>
+                        <div class="action">
+                            <div class="action-grid">
+                                <div class="lang">
+                                    <a href="nec-home-en.html"><img src="img/flag-en.png" alt=""></a>
+                                    <a href="nec-home-th.html"><img src="img/flag-th.png" alt=""></a>
+                                </div>
+                                <div class="toggle-menu" id="symbol-menu">
+                                    <a href="javascript:void(0);" class="icon" onclick="active_menu_side()"><i
+                                            class="toggle-one"></i><i class="toggle-two"></i><i
+                                            class="toggle-three"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end header-grid -->
+                </div>
+                <!-- end container -->
+            </div>
+            <!-- end header -->
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- start title-page -->
+        <div class="title-page">
+            <div class="container">
+                <div class="title-page-heading">
+                    <p><b>New electric</b></p>
+                    <h1>BUSINESS</h1>
+                </div>
+            </div>
+        </div>
+        <!-- end title-page -->
+
+        <section class="content">
+            <div class="container">
+
+                <div class="content-business-description">
+                    <div class="content-business-description-title">
+                        <h1>CONSTRUCTION MANAGEMENT</h1>
+                    </div>
+                    <p>Construction Manager (CM) is a person responsible for the construction works including inspecting, 
+                        approving, coordinating and certifying the works, materials, safety and construction methods of all subcontractors, 
+                        builders and suppliers. Being a CM holds vital responsibility for which NEC will appoint only senior and dedicated professionals 
+                        with broad-based knowledge and interest in construction related, especially for Substation Construction Management.</p>
+                </div>
+                <!-- end description -->
+
+                <div class="content-business-service">
+                    <div class="content-business-service-title">
+                        <h2>NEC’s Construction Management Services</h2>
+                    </div>
+                    <div class="content-business-service-grid">
+                        <div class="content-business-symbol-1">
+                            <div class="content-business-symbol-grid">
+                                <img src="img/business-symbol-1.png" alt="">
+                                <p>Site physical analysis, accessibility studies, neighboring sensitivities</p>
+                            </div>
+                        </div>
+                        <div class="content-business-symbol-2">
+                            <div class="content-business-symbol-grid">
+                                <img src="img/business-symbol-2.png" alt="">
+                                <p>Advising on the construction feasibility, interfaces, and design schedule</p>
+                            </div>
+                        </div>
+                        <div class="content-business-symbol-3">
+                            <div class="content-business-symbol-grid">
+                                <img src="img/business-symbol-3.png" alt="">
+                                <p>Pre-Qualification of subcontractors</p>
+                            </div>
+                        </div>
+                        <div class="content-business-symbol-4">
+                            <div class="content-business-symbol-grid">
+                                <img src="img/business-symbol-4.png" alt="">
+                                <p>Construction methods advisory</p>
+                            </div>
+                        </div>
+                        <div class="content-business-symbol-5">
+                            <div class="content-business-symbol-grid">
+                                <img src="img/business-symbol-5.png" alt="">
+                                <p>Advising on construction schedule, and safety concerns for subcontractors tendering</p>
+                            </div>
+                        </div>
+                        <div class="content-business-symbol-6">
+                            <div class="content-business-symbol-grid">
+                                <img src="img/business-symbol-6.png" alt="">
+                                <p>Defining key performance indicators for subcontractors</p>
+                            </div>
+                        </div>
+                        <div class="content-business-symbol-7">
+                            <div class="content-business-symbol-grid">
+                                <img src="img/business-symbol-7.png" alt="">
+                                <p>Advising on the need for mock-ups, samples, third party testing, inspections, and design approvals</p>
+                            </div>
+                        </div>
+                        <div class="content-business-symbol-8">
+                            <div class="content-business-symbol-grid">
+                                <img src="img/business-symbol-8.png" alt="">
+                                <p>Advising on to construction costs, construction schedule with milestones, phasing, major deliveries and other site parameters.</p>
+                            </div>
+                        </div>
+                        <div class="content-business-symbol-9">
+                            <div class="content-business-symbol-grid">
+                                <img src="img/business-symbol-9.png" alt="">
+                                <p>Arranging for site facilities, fences, hoardings, roads and walkways, drainage, power, communications, IT, water supply and temporary services</p>
+                            </div>
+                        </div>
+                        <div class="content-business-symbol-10">
+                            <div class="content-business-symbol-grid">
+                                <img src="img/business-symbol-10.png" alt="">
+                                <p>Arranging site Inspection, testing, daily logs, monthly reports, Request for Information (RFI) 
+                                    from designers, site communications (SI’s, NCR’s, MOM, RFA’s, Visitors, etc.), safety meetings, 
+                                    subcontractor meetings, variations orders, and material substitutions.</p>
+                            </div>
+                        </div>
+                        <div class="content-business-symbol-11">
+                            <div class="content-business-symbol-grid">
+                                <img src="img/business-symbol-11.png" alt="">
+                                <p>Inspecting subcontractors works, issuing instructions and certificates</p>
+                            </div>
+                        </div>
+                        <div class="content-business-symbol-12">
+                            <div class="content-business-symbol-grid">
+                                <img src="img/business-symbol-12.png" alt="">
+                                <p>Testing and Commissioning</p>
+                            </div>
+                        </div>
+                        <div class="content-business-symbol-13">
+                            <div class="content-business-symbol-grid">
+                                <img src="img/business-symbol-13.png" alt="">
+                                <p>Collecting as-built drawings and manuals of pre and post construction phase</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end service -->
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="contact-us">
+                    <h6>NEW Electric Company Limited</h6>
+                    <p> 22 Krungthep-Non 8,
+                        Bang Khen, Muang Nonthaburi, Nonthaburi,
+                        Thailand 11000 <br></p>
+                    <span> Tel : 02 965 0072-3 <br>
+                        Fax : 02 965 0076 <br>
+                        E-mail : nec.999engineer@gmail.com </span>
+                </div>
+                <div class="social"></div>
+                <div class="message"></div>
+            </div>
+            <!-- end footer-grid -->
+        </div>
+        <!-- end container -->
+    </footer>
+
+    <div class="copyright">
+        <div class="container">
+            <div class="credit">
+                <p>Copyright © 2022 NEW Electric Company Limited</p>
+            </div>
+        </div>
+    </div>
+    <!-- end copyright -->
+
+</body>
+
+</html>

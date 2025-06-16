@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>NEW ELECTRIC</title>
+    <link rel="icon" href="img/icon_NEC.png">
+    <link rel="stylesheet" href="css/style-nec-header&footer.css">
+    <link rel="stylesheet" href="css/style-nec-news.css">
+
+    <script>
+
+        function active_menu_side() {
+            var x = document.getElementById("menu-side-active");
+            var y = document.getElementById("symbol-menu");
+            if (x.className === "menu-side") {
+                x.className += " active";
+                y.className += " active";
+            } else {
+                x.className = "menu-side";
+                y.className = "toggle-menu";
+            }
+        }
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 0 && document.getElementById("main-header").className === "header") {
+                document.getElementById("main-header").className += " active";
+            } else if (window.scrollY === 0) {
+                document.getElementById("main-header").className = "header";
+            }
+        })
+
+    </script>
+
+</head>
+
+<body>
+
+    <aside class="menu-side" id="menu-side-active">
+        <ul class="menu-side-bar">
+            <a href="nec-home-en.html">
+                <li>Home</li>
+            </a>
+            <a href="nec-about-en.html">
+                <li>About NEC</li>
+            </a>
+            <a href="nec-business-en.html">
+                <li>Business</li>
+            </a>
+            <a href="nec-news-en.html" class="page-active">
+                <li>News</li>
+            </a>
+            <a href="nec-proref-en.html">
+                <li>Project reference</li>
+            </a>
+            <a href="nec-contact-en.html">
+                <li>Contact</li>
+            </a>
+        </ul>
+    </aside>
+
+    <header>
+        <nav>
+            <div class="header" id="main-header">
+                <div class="container">
+                    <div class="header-grid">
+                        <div class="logo">
+                            <a href="nec-home-en.html"><img src="img/Logo_NEC(W).png" alt=""></a>
+                        </div>
+                        <ul class="menu">
+                            <li><a href="nec-home-en.html">Home</a></li>
+                            <li><a href="nec-about-en.html">About NEC</a></li>
+                            <li><a href="nec-business-en.html">Business</a></li>
+                            <li><a href="nec-news-en.html" class="page-active">News</a></li>
+                            <li><a href="nec-proref-en.html">Project reference</a></li>
+                            <li><a href="nec-contact-en.html">Contact</a></li>
+                        </ul>
+                        <div class="action">
+                            <div class="action-grid">
+                                <div class="lang">
+                                    <a href="nec-home-en.html"><img src="img/flag-en.png" alt=""></a>
+                                    <a href="nec-home-th.html"><img src="img/flag-th.png" alt=""></a>
+                                </div>
+                                <div class="toggle-menu" id="symbol-menu">
+                                    <a href="javascript:void(0);" class="icon" onclick="active_menu_side()"><i
+                                            class="toggle-one"></i><i class="toggle-two"></i><i
+                                            class="toggle-three"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end header-grid -->
+                </div>
+                <!-- end container -->
+            </div>
+            <!-- end header -->
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- start title-page -->
+        <div class="title-page">
+            <div class="container">
+                <div class="title-page-heading">
+                    <p><b>New electric</b></p>
+                    <h1>NEWS</h1>
+                </div>
+            </div>
+        </div>
+        <!-- end title-page -->
+
+        <section class="content">
+
+            <div class="content-news">
+                <div class="container">
+                    <div class="content-news-detail">
+                        <div class="newsSlides" style="height: 0px;">
+                            <div class="slides-frame-out">
+                                <div class="slides-frame-in">
+                                    <div class="news-header-grid">
+                                        <h1>Final Delivery for PEA 115/22kV Sophisai Substation</h1>
+                                        <div class="close-news" onclick="closeNews()">
+                                            <i></i>
+                                        </div>
+                                    </div>
+                                    <p class="news-description"></p>
+                                    <div class="news-img">
+                                        <img src="img/news-xia.png" alt="">
+                                    </div>
+                                    <p class="date">19 May 2022</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="newsSlides" style="height: 0px;">
+                            <div class="slides-frame-out">
+                                <div class="slides-frame-in">
+                                    <div class="news-header-grid">
+                                        <h1>The signing ceremony of the contract for the
+                                            construction of Substation
+                                            Udon5 project</h1>
+                                        <div class="close-news" onclick="closeNews()">
+                                            <i></i>
+                                        </div>
+                                    </div>
+                                    <p class="news-description">On 26 July 2022, The Provincial Electricity Authority
+                                        (PEA) and AA CONSORTIUM (ANSI and AIT Company) jointly signed a contract for the
+                                        construction
+                                        of a 115/22kV power station in Udon Thani 5 on the National Highway No. 2410
+                                        line
+                                        around Udon Thani. With Mr. Praphan Sinuan, Deputy Governor of Engineering
+                                        Provincial
+                                        Electricity Authority and Mr. Apipol Chananugool, representative from AA
+                                        CONSORTIUM (ANSI and AIT)
+                                        jointly signed the contract. The project has a total duration of 510 days with a
+                                        total project value of 228 million baht. To improve the quality of service to
+                                        power
+                                        users, ANSI and AIT will strictly and efficiently comply with the contract in
+                                        accordance
+                                        with the employer's policies and plans.</p>
+                                    <div class="news-img">
+                                        <img src="img/news-ude.png" alt="">
+                                    </div>
+                                    <p class="date">26 Jul 2022</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="newsSlides" style="height: 0px;">
+                            <div class="slides-frame-out">
+                                <div class="slides-frame-in">
+                                    <div class="news-header-grid">
+                                        <h1>Worship the sacred for the construction of Substation Udon5 project</h1>
+                                        <div class="close-news" onclick="closeNews()">
+                                            <i></i>
+                                        </div>
+                                    </div>
+                                    <p class="news-description">On 7 September 2022 at 9.09 am, The management team
+                                        invited Worshiper Mr. Wichan Pimsawad to perform the sacrificial ceremony. At
+                                        the site
+                                        for the construction of a 115/22kV power station in Udon Thani 5 on the area of
+                                        National
+                                        Highway No. 2410 line around Udon Thani. to make the project run smoothly,
+                                        create morale and inspiration to work for all employees.</p>
+                                    <div class="news-img">
+                                        <img src="img/news-ude-worship.png" alt="">
+                                    </div>
+                                    <p class="date">07 Sep 2022</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end newsSlides -->
+                    </div>
+                    <script>
+                        function currentNews(newsIndex) {
+                            let slides;
+                            let delay = "false";
+                            var news = document.getElementsByClassName("newsSlides");
+                            for (slides = 0; slides < news.length; slides++) {
+                                if ((news[slides].className == "newsSlides active") || (news[slides].className == "newsSlides first")) {
+                                    window.scrollTo({ top: 100, behavior: 'smooth' });
+                                    delay = "true";
+                                    collapseNews(news[slides]);
+                                }
+                                news[slides].className = news[slides].className.replace(" first", "");
+                                news[slides].className = news[slides].className.replace(" active", "");
+                            }
+                            if (delay == "true") {
+                                news[newsIndex - 1].className += " active";
+                            } else if (delay == "false") {
+                                news[newsIndex - 1].className += " first";
+                            }
+                            expandNews(news[newsIndex - 1]);
+                        }
+
+                        function collapseNews(element) {
+                            element.style.height = 0 + 'px';
+                        }
+
+                        function expandNews(element) {
+                            element.style.height = element.scrollHeight + 'px';
+                        }
+
+                        function closeNews() {
+                            var news = document.getElementsByClassName("newsSlides");
+                            for (slides = 0; slides < news.length; slides++) {
+                                if ((news[slides].className == "newsSlides active") || (news[slides].className == "newsSlides first")) {
+                                    collapseNews(news[slides]);
+                                }
+                                news[slides].className = news[slides].className.replace(" first", "");
+                                news[slides].className = news[slides].className.replace(" active", "");
+                            }
+                        }
+                    </script>
+                    <!-- end detail -->
+                </div>
+                <!-- end container -->
+            </div>
+            <!-- end news -->
+
+            <div class="content-news-list">
+                <div class="container">
+
+                    <div class="swiper newslist">
+                        <div class="swiper-wrapper">
+                            <!-- start news swiper -->
+                            <div class="swiper-slide">
+                                <div class="news-head-grid">
+                                    <img src="img/news-ude-worship.png" alt="">
+                                    <div class="description">
+                                        <h1><a onclick="currentNews(3)">Worship the sacred for the construction of
+                                                Substation Udon5 project</a></h1>
+                                        <p>07 Sep 2022</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="news-head-grid">
+                                    <img src="img/news-ude.png" alt="">
+                                    <div class="description">
+                                        <h1><a onclick="currentNews(2)">The signing ceremony of the contract for the
+                                                construction of Substation
+                                                Udon5 project</a></h1>
+                                        <p>26 Jul 2022</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="news-head-grid">
+                                    <img src="img/news-xia.png" alt="">
+                                    <div class="description">
+                                        <h1><a onclick="currentNews(1)">Final Delivery for PEA 115/22kV Sophisai
+                                                Substation</a></h1>
+                                        <p>19 May 2022</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end news swiper -->
+                        </div>
+                        <div class="swiper-scrollbar"></div>
+                    </div>
+
+                    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+                    <script src="js/swiper-bundle.min.js"></script>
+                    <script>
+                        var swiper = new Swiper(".newslist", {
+                            direction: "vertical",
+                            slidesPerView: 4,
+                            freeMode: true,
+                            scrollbar: {
+                                el: ".swiper-scrollbar",
+                            },
+                        });
+                    </script>
+                </div>
+            </div>
+            <!-- end newslist -->
+
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="contact-us">
+                    <h6>NEW Electric Company Limited</h6>
+                    <p> 22 Krungthep-Non 8,
+                        Bang Khen, Muang Nonthaburi, Nonthaburi,
+                        Thailand 11000 <br></p>
+                    <span> Tel : 02 965 0072-3 <br>
+                        Fax : 02 965 0076 <br>
+                        E-mail : nec.999engineer@gmail.com </span>
+                </div>
+                <div class="social"></div>
+                <div class="message"></div>
+            </div>
+            <!-- end footer-grid -->
+        </div>
+        <!-- end container -->
+    </footer>
+
+    <div class="copyright">
+        <div class="container">
+            <div class="credit">
+                <p>Copyright © 2022 NEW Electric Company Limited</p>
+            </div>
+        </div>
+    </div>
+    <!-- end copyright -->
+
+</body>
+
+</html>

@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>NEW ELECTRIC</title>
+    <link rel="icon" href="img/icon_NEC.png">
+    <link rel="stylesheet" href="css/style-nec-header&footer.css">
+    <link rel="stylesheet" href="css/style-nec-contact.css">
+
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+
+        function active_menu_side() {
+            var x = document.getElementById("menu-side-active");
+            var y = document.getElementById("symbol-menu");
+            if (x.className === "menu-side") {
+                x.className += " active";
+                y.className += " active";
+            } else {
+                x.className = "menu-side";
+                y.className = "toggle-menu";
+            }
+        }
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 0 && document.getElementById("main-header").className === "header") {
+                document.getElementById("main-header").className += " active";
+            } else if (window.scrollY === 0) {
+                document.getElementById("main-header").className = "header";
+            }
+        })
+
+        function sendEmail() {
+            Email.send({
+                Host : "smtp.gmail.com",
+                Username : "nec.999engineer@gmail.com",
+                Password : "newengineering",
+                To : 'nec.999engineer@gmail.com',
+                From : document.getElementById("email").value,
+                Subject : "New Contact From Enquiry",
+                Body : "Name : " + document.getElementById("name").value
+                + "<br> Email : " + document.getElementById("email").value
+                + "<br> Phone : " + document.getElementById("tel").value
+                + "<br> Message : " + document.getElementById("message").value
+            }).then(
+            message => alert("Message sent succesfully")
+            );
+        }
+
+    </script>
+
+</head>
+
+<body>
+
+    <aside class="menu-side" id="menu-side-active">
+        <ul class="menu-side-bar">
+            <a href="nec-home-en.html"><li>Home</li></a>
+            <a href="nec-about-en.html"><li>About NEC</li></a>
+            <a href="nec-business-en.html"><li>Business</li></a>
+            <a href="nec-news-en.html"><li>News</li></a>
+            <a href="nec-proref-en.html"><li>Project reference</li></a>
+            <a href="nec-contact-en.html" class="page-active"><li>Contact</li></a>
+        </ul>
+    </aside>
+
+    <header>
+        <nav>
+            <div class="header" id="main-header">
+                <div class="container">
+                    <div class="header-grid">
+                        <div class="logo">
+                            <a href="nec-home-en.html"><img src="img/Logo_NEC(W).png" alt=""></a>
+                        </div>
+                        <ul class="menu">
+                            <li><a href="nec-home-en.html">Home</a></li>
+                            <li><a href="nec-about-en.html">About NEC</a></li>
+                            <li><a href="nec-business-en.html">Business</a></li>
+                            <li><a href="nec-news-en.html">News</a></li>
+                            <li><a href="nec-proref-en.html">Project reference</a></li>
+                            <li><a href="nec-contact-en.html" class="page-active">Contact</a></li>
+                        </ul>
+                        <div class="action">
+                            <div class="action-grid">
+                                <div class="lang">
+                                    <a href="nec-home-en.html"><img src="img/flag-en.png" alt=""></a>
+                                    <a href="nec-home-th.html"><img src="img/flag-th.png" alt=""></a>
+                                </div>
+                                <div class="toggle-menu" id="symbol-menu">
+                                    <a href="javascript:void(0);" class="icon" onclick="active_menu_side()">
+                                        <i class="toggle-one"></i>
+                                        <i class="toggle-two"></i>
+                                        <i class="toggle-three"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end header-grid -->
+                </div>
+                <!-- end container -->
+            </div>
+            <!-- end header -->
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- start title-page -->
+        <div class="title-page">
+            <div class="container">
+                <div class="title-page-heading">
+                    <p><b>New electric</b></p>
+                    <h1>CONTACT</h1>
+                </div>
+            </div>
+        </div>
+        <!-- end title-page -->
+
+        <section class="content">
+            <div class="container">
+
+                <div class="content-contact">
+                    <div class="content-contact-title">
+                        <h1>NEW ELECTRIC COMPANY LIMITED</h1>
+                    </div>
+                    <div class="content-contact-grid">
+
+                        <div class="content-contact-information">
+                            <div class="content-contact-information-grid">
+                                <img src="img/contact-symbol-location.png" alt="">
+                                <p class="locatino">22 Krungthep-Non 8, Bang Khen, Muang Nonthaburi, Nonthaburi, Thailand 11000</p>
+                                <img src="img/contact-symbol-tel.png" alt="">
+                                <p class="tel">02 965 0072-3</p>
+                                <img src="img/contact-symbol-fax.png" alt="">
+                                <p class="fax">02 965 0076</p>
+                                <img src="img/contact-symbol-mail.png" alt="">
+                                <p class="mail">nec.999engineer@gmail.com</p>
+                            </div>
+                        </div>
+                        <!-- end information -->
+
+                        <div class="content-contact-sendmail">
+                            <div class="container-sendmail">
+                                <form onsubmit="sendEmail(); reset(); return false;">
+                                    <h2>Quick Contact</h2>
+                                    <p>Name</p><input type="text" id="name" placeholder="Your name" required>
+                                    <p>Email</p><input type="email" id="email" placeholder="Your email address" required>
+                                    <p>Phone</p><input type="tel" id="tel" placeholder="Your phone number" required>
+                                    <p>Message</p><textarea id="message" rows="4" placeholder="How can we help you?"></textarea>
+                                    <button type="submit"><b>Send</b></button>
+                                </form>
+                            </div>
+                        </div>
+                        <!-- end sendmail -->
+
+                    </div>
+                </div>
+                <!-- end contact -->
+
+                <div class="content-map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d968.4929378574725!2d100.5233107292242!3d13.84073420155823!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e29bb7b1a5976b%3A0xc92e20417248c71a!2z4Lia4Lij4Li04Lip4Lix4LiXIOC4meC4tOC4p-C4reC4tOC5gOC4peC4hOC4l-C4o-C4tOC4hCDguIjguLPguIHguLHguJQ!5e0!3m2!1sth!2sth!4v1665723314111!5m2!1sth!2sth"
+                     width=100% height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <!-- end map -->
+                
+            </div>
+            <!-- end container -->
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="contact-us">
+                    <h6>NEW Electric Company Limited</h6>
+                    <p> 22 Krungthep-Non 8,
+                        Bang Khen, Muang Nonthaburi, Nonthaburi,
+                        Thailand 11000 <br></p>
+                    <span> Tel : 02 965 0072-3 <br>
+                        Fax : 02 965 0076 <br>
+                        E-mail : nec.999engineer@gmail.com </span>
+                </div>
+                <div class="social"></div>
+                <div class="message"></div>
+            </div>
+            <!-- end footer-grid -->
+        </div>
+        <!-- end container -->
+    </footer>
+
+    <div class="copyright">
+        <div class="container">
+            <div class="credit">
+                <p>Copyright © 2022 NEW Electric Company Limited</p>
+            </div>
+        </div>
+    </div>
+    <!-- end copyright -->
+
+</body>
+
+</html>
